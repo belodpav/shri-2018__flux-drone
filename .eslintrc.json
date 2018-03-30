@@ -1,0 +1,11 @@
+{
+    "extends": "google",
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module"
+    },
+    "rules": {
+        "new-cap": ["error", { "properties": false }],
+        "comma-dangle": [2, "never"]
+    }
+}
