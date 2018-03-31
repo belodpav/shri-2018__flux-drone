@@ -48,7 +48,7 @@ class Store {
 
         if (responses.hasOwnProperty(action.type)) {
             responses[action.type].call(this, action.payload);
-            this.notifyObservers();
+            this._notifyObservers();
         }
     }
 
