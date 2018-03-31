@@ -10,7 +10,7 @@ let build = {};
 
 build.mode = ENV_MODE;
 build.isProduction = build.mode === 'production';
-build.watch = build.isProduction;
+build.watch = !build.isProduction;
 
 if (build.isProduction) {
     build.bundle = itIs.name.min;
