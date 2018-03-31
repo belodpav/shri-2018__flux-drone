@@ -14,8 +14,15 @@ function genCodeWithData(srcTemplate, data) {
         item = item.replace('{{', '');
         item = item.replace('}}', '');
 
-        if (data[item] !== undefined) {
-            val = data[item];
+        const itemPath = item.trim().split('.');
+        let obj = data;
+
+        for (let i = 0; i < itemPath.length; i++) {
+            obj = obj[itemPath[i]];
+        }
+
+        if (obj !== undefined) {
+            val = obj;
         }
 
         html = html.replace('{{' + item + '}}', val);
@@ -24,4 +31,4 @@ function genCodeWithData(srcTemplate, data) {
     return html;
 }
 
-export {genCodeWithData};
+module.exports = {genCodeWithData};
