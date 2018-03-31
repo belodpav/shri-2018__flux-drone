@@ -1,4 +1,4 @@
-const {genCodeWithData} = reuire('../template/template');
+const {genCodeWithData} = require('../template/template');
 
 /**
  * Представляет View сущность
