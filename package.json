@@ -4,7 +4,7 @@
   "description": "Flux-dron is a framework based on flux architecture",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test/*",
+    "test": "mocha test test/**/*",
     "lint": "eslint .",
     "dev": "MODE='development' webpack",
     "build": "MODE='production' webpack"
