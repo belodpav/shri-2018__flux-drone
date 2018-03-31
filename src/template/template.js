@@ -1,5 +1,6 @@
 /**
- * Returns String with injected data
+ * Возвращает строку с подставленными
+ * данными
  * @param {String} srcTemplate
  * @param {Object} data
  * @return {String}
