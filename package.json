@@ -7,7 +7,9 @@
     "test": "mocha test test/**/*",
     "lint": "eslint .",
     "dev": "MODE='development' webpack",
-    "build": "MODE='production' webpack"
+    "dev:watch": "npm run dev --watch",
+    "build": "MODE='production' webpack",
+    "build:all": "npm run dev && npm run build"
   },
   "keywords": [
     "flux",
