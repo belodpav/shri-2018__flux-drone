@@ -1,7 +1,7 @@
 {
-  "name": "flux-dron",
+  "name": "flux-drone",
   "version": "1.0.0",
-  "description": "Flux-dron is a framework based on flux architecture",
+  "description": "Flux-drone is a framework based on flux architecture",
   "main": "index.js",
   "scripts": {
     "test": "mocha test test/**/*",
