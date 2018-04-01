@@ -1,5 +1,5 @@
 const {assert} = require('chai');
-const {genCodeWithData} = require('../../../src/template/template');
+const {tempEngine} = require('../../../src/template/template');
 
 describe('flux-dron/templating', () => {
     it('Подставляет значение переменной в шаблон', () => {
@@ -20,7 +20,7 @@ describe('flux-dron/templating', () => {
             title: 'World'
         };
 
-        const htmlResult = genCodeWithData(srcTmp, data);
+        const htmlResult = tempEngine(srcTmp, data);
 
         assert.equal(expectedResult, htmlResult);
     });
@@ -47,7 +47,7 @@ describe('flux-dron/templating', () => {
             number: 42
         };
 
-        const htmlResult = genCodeWithData(srcTmp, data);
+        const htmlResult = tempEngine(srcTmp, data);
 
         assert.equal(expectedResult, htmlResult);
     });

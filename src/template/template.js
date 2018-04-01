@@ -5,7 +5,7 @@
  * @param {Object} data
  * @return {String}
  */
-function genCodeWithData(srcTemplate, data) {
+function tempEngine(srcTemplate, data) {
     const pattern = /{{(.*?)}}/g;
     const matches = srcTemplate.match(pattern);
     let html = srcTemplate;
@@ -32,4 +32,4 @@ function genCodeWithData(srcTemplate, data) {
     return html;
 }
 
-module.exports = {genCodeWithData};
+module.exports = {tempEngine};
