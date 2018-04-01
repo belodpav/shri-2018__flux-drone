@@ -112,7 +112,8 @@ const Counter = `
 Запись `data-deps="age, name"` в шаблоне
 `<span data-deps="age, name">Hello {{name}}! Are you {{age}} years old?</span>`
 Что элемент будет перендериваться только если в хранилище будут изменены поля `name и age`.
-(Открыть на codepen)[https://codepen.io/belodpav/pen/aYGjMY?editors=0010]
+
+[Открыть на codepen](https://codepen.io/belodpav/pen/aYGjMY?editors=0010)
 
 Атрибуттами `data-action` в коде шаблонов мы определяем реакцию DOM узла на действие пользователя. Так запись `data-action="click=decrease"` означает что данный элемент на событие
 `click` будет вызывать реакцию(функцию определенную при создании view) `increase`.
