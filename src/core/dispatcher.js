@@ -72,7 +72,7 @@ class Dispatcher {
         }
 
         if (this._isConsoleLog) {
-            this._printLogToConsole();
+            this._printLogToConsole(logItem);
         }
     }
 
