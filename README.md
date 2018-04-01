@@ -10,6 +10,20 @@ Flux-drone - фреймворк позволяющий стоить прилож
 - View
 - Dispatcher
 
+### Использование
+
+Чтобы использовать Flux-drone в своем проекте, необходимо подключить его в свой проект:
+
+```(javascript)
+    <script src="fluxDrone.min.js"></script>
+```
+
+CDN:
+
+[production](https://cdn.rawgit.com/belodpav/shri-2018__flux-drone/master/dist/fluxDrone.min.js)
+
+[development](https://cdn.rawgit.com/belodpav/shri-2018__flux-drone/master/dist/fluxDrone.js)
+
 ### Dispatcher
 
 Конструктор диспетчера:
